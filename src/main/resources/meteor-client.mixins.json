@@ -99,6 +99,7 @@
     "FogRendererMixin",
     "GameOptionsMixin",
     "GameRendererMixin",
+    "GameRendererNoHurtCamMixin",
     "GlBackendMixin",
     "GlCommandEncoderMixin",
     "GpuTextureMixin",

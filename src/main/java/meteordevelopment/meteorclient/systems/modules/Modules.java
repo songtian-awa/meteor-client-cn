@@ -21,6 +21,7 @@ import meteordevelopment.meteorclient.systems.System;
 import meteordevelopment.meteorclient.systems.Systems;
 import meteordevelopment.meteorclient.systems.config.Config;
 import meteordevelopment.meteorclient.systems.modules.combat.*;
+import meteordevelopment.meteorclient.systems.modules.custom.*;
 import meteordevelopment.meteorclient.systems.modules.misc.*;
 import meteordevelopment.meteorclient.systems.modules.misc.swarm.Swarm;
 import meteordevelopment.meteorclient.systems.modules.movement.*;
@@ -76,6 +77,7 @@ public class Modules extends System<Modules> {
         initRender();
         initWorld();
         initMisc();
+        initCustom();
     }
 
     @Override
@@ -564,5 +566,49 @@ public class Modules extends System<Modules> {
         add(new SoundBlocker());
         add(new Spam());
         add(new Swarm());
+    }
+
+    private void initCustom() {
+        // Movement
+        add(new RotationBypass());
+        add(new TimerBypass());
+        add(new VelocityBypass());
+        add(new StepBypass());
+        add(new SpiderBypass());
+        add(new Glide());
+        add(new FastFall());
+        add(new AntiPush());
+        add(new AntiLevitation());
+        add(new SlimeLaunch());
+
+        // Combat
+        add(new AutoBlock());
+        add(new AimAssist());
+        add(new Combo());
+        add(new SwordStop());
+        add(new TargetHud());
+        add(new AutoRod());
+        add(new PearlAim());
+
+        // Render
+        add(new CrystalESP());
+        add(new SpawnESP());
+        add(new ItemESP());
+        add(new SignESP());
+        add(new RedstoneESP());
+        add(new ChunkBorders());
+        add(new EntityHealth());
+        add(new NoHurtCam());
+
+        // Player
+        add(new AutoShift());
+        add(new DropSlot());
+        add(new InventoryCleaner());
+        add(new McCommand());
+
+        // Misc
+        add(new ChatFilter());
+        add(new PacketSorter());
+        add(new AntiDrown());
     }
 }
