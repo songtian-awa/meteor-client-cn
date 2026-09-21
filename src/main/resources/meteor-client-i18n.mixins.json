@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "meteordevelopment.meteorclient.mixin.i18n",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "meteordevelopment.meteorclient.MixinPlugin",
+  "client": [
+    "FontMixin",
+    "FontsMixin",
+    "ModuleMixin",
+    "SettingMixin",
+    "VanillaTextRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

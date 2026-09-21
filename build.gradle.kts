@@ -87,8 +87,8 @@ dependencies {
     modCompileOnly("com.viaversion:viafabricplus:${properties["viafabricplus_version"] as String}") { isTransitive = false }
     modCompileOnly("com.viaversion:viafabricplus-api:${properties["viafabricplus_version"] as String}") { isTransitive = false }
 
-    // Baritone (https://github.com/MeteorDevelopment/baritone)
-    modCompileOnly("meteordevelopment:baritone:${properties["baritone_version"] as String}-SNAPSHOT")
+    // Baritone (https://github.com/MeteorDevelopment/baritone) - bundled jar-in-jar for auto pathfinding
+    modInclude("meteordevelopment:baritone:${properties["baritone_version"] as String}-SNAPSHOT")
     // ModMenu (https://github.com/TerraformersMC/ModMenu)
     modCompileOnly("com.terraformersmc:modmenu:${properties["modmenu_version"] as String}")
 

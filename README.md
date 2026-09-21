@@ -26,6 +26,15 @@
 ### Installation
 Follow the [guide](https://meteorclient.com/faq/installation) on the wiki.
 
+## Custom build: 中文汉化 + 内置 Baritone 自动寻路
+
+This fork (built for Minecraft 1.21.8) adds two features on top of upstream:
+
+1. **内置 Baritone（自动寻路）**：Baritone 通过 jar-in-jar 直接打包进 meteor-client 球体，无需在 mods 文件夹单独放置 Baritone。进服后 `#goto x y z`、`#follow`、`#mine` 等 Baritone 命令开箱即用，Meteor 的 Excavator / InfinityMiner 等依赖 Baritone 的模块也会自动启用。
+2. **中文汉化**：模块名、模块描述、设置项、设置描述在进入游戏后自动显示为简体中文（词库 3354 条），并内置 CJK 字体（文泉驿微米黑 WenQuanWeiMiHei）作为默认界面字体，中文字符可正常渲染。汉化字典与字体方案参考并改编自 [dingzhen-vape/Meteor-I18n-Support-plugin](https://github.com/dingzhen-vape/Meteor-I18n-Support-plugin)（GPL-3.0，与本项目同协议）。
+
+如需回退为英文界面，可自行删除 `src/main/resources/assets/meteor-client/i18n/zh_cn.json` 与 `src/main/java/meteordevelopment/meteorclient/mixin/i18n/` 后重新构建（同时从 `src/main/resources/fabric.mod.json` 的 mixins 列表移除 `meteor-client-i18n.mixins.json`）。
+
 ## Contributions
 We will review and help with all reasonable pull requests as long as the guidelines below are met.
 
@@ -47,7 +56,8 @@ You will be rewarded with a role on our Discord server and a customisable in-gam
 
 ## Credits
 [Cabaletta](https://github.com/cabaletta) and [WagYourTail](https://github.com/wagyourtail) for [Baritone](https://github.com/cabaletta/baritone)  
-The [Fabric Team](https://github.com/FabricMC) for [Fabric](https://github.com/FabricMC/fabric-loader) and [Yarn](https://github.com/FabricMC/yarn)
+The [Fabric Team](https://github.com/FabricMC) for [Fabric](https://github.com/FabricMC/fabric-loader) and [Yarn](https://github.com/FabricMC/yarn)  
+[dingzhen-vape](https://github.com/dingzhen-vape) for the Chinese translation dictionary and CJK font approach ([Meteor-I18n-Support-plugin](https://github.com/dingzhen-vape/Meteor-I18n-Support-plugin), GPL-3.0)
 
 ## Licensing
 This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). 
