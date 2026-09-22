@@ -649,6 +649,20 @@ public class Modules extends System<Modules> {
         add(new NetherCoords());
         add(new FastPlace());
         add(new ClickAssist());
+        add(new WebBypass());
+        add(new KeepSprint());
+        add(new AutoSleep());
+        add(new DurabilityWarn());
+        add(new ElytraSafe());
+        add(new AutoPotion());
+        add(new AutoTorch());
+        add(new CoordsCopy());
+        add(new AutoReply());
+        add(new HoleFinder());
+        add(new VillagerESP());
+        add(new ShulkerESP());
+        add(new DripstoneESP());
+        add(new AnchorESP());
 
         // Misc
         add(new ChatFilter());

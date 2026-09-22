@@ -48,7 +48,10 @@ public class AutoTest {
         "auto-shift", "drop-slot", "inventory-cleaner", "mc-command",
         "auto-soup", "fish-bot", "nether-coords", "fast-place", "click-assist",
         "chat-filter", "packet-sorter", "anti-drown",
-        "chat-timestamps", "auto-shout"
+        "chat-timestamps", "auto-shout",
+        "web-bypass", "keep-sprint", "auto-sleep", "durability-warn", "elytra-safe", "auto-potion", "auto-torch",
+        "coords-copy", "auto-reply",
+        "hole-finder", "villager-esp", "shulker-esp", "dripstone-esp", "anchor-esp"
     );
 
     public AutoTest() {
