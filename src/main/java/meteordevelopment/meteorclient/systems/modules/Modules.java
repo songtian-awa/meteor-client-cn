@@ -663,6 +663,16 @@ public class Modules extends System<Modules> {
         add(new ShulkerESP());
         add(new DripstoneESP());
         add(new AnchorESP());
+        add(new AirWalk());
+        add(new WordFilter());
+        add(new AntiBot());
+        add(new Teams());
+        add(new TreeAura());
+        add(new Panic());
+        add(new TotemTimer());
+        add(new AutoFarm());
+        add(new SilentRotate());
+        add(new AutoMine());
 
         // Misc
         add(new ChatFilter());

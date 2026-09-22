@@ -51,7 +51,8 @@ public class AutoTest {
         "chat-timestamps", "auto-shout",
         "web-bypass", "keep-sprint", "auto-sleep", "durability-warn", "elytra-safe", "auto-potion", "auto-torch",
         "coords-copy", "auto-reply",
-        "hole-finder", "villager-esp", "shulker-esp", "dripstone-esp", "anchor-esp"
+        "hole-finder", "villager-esp", "shulker-esp", "dripstone-esp", "anchor-esp",
+        "air-walk", "word-filter", "anti-bot", "teams", "tree-aura", "panic", "totem-timer", "auto-farm", "silent-rotate", "auto-mine"
     );
 
     public AutoTest() {
