@@ -139,6 +139,11 @@ public class MeteorClient implements ClientModInitializer {
         // Post init
         ReflectInit.init(PostInit.class);
 
+        // Automated self-test hook (enabled with -Dmeteor.autotest=1)
+        if (AutoTest.ENABLED) {
+            EVENT_BUS.subscribe(new AutoTest());
+        }
+
         // Save on shutdown
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             OnlinePlayers.leave();

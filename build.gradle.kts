@@ -28,6 +28,10 @@ repositories {
         name = "ViaVersion"
         url = uri("https://repo.viaversion.com")
     }
+    maven {
+        name = "babbaj"
+        url = uri("https://babbaj.github.io/maven/")
+    }
     mavenCentral()
 
     exclusiveContent {
@@ -82,7 +86,10 @@ dependencies {
     modCompileOnly(libs.viafabricplus) { isTransitive = false }
     modCompileOnly(libs.viafabricplus.api) { isTransitive = false }
 
-    modCompileOnly(libs.baritone)
+    // Baritone (https://github.com/MeteorDevelopment/baritone) - bundled jar-in-jar for auto pathfinding
+    modInclude(libs.baritone)
+    // Nether pathfinder JNI lib required by Baritone elytra pathing (bundled jar-in-jar)
+    modInclude(libs.nether.pathfinder)
     modCompileOnly(libs.modmenu)
 
     // Libraries (JAR-in-JAR)
@@ -146,6 +153,16 @@ afterEvaluate {
 
 loom {
     accessWidenerPath = file("src/main/resources/meteor-client.accesswidener")
+
+    runs {
+        named("client") {
+            // Automated self-test hook (only active when the property is set)
+            val autotest = providers.gradleProperty("autotest").getOrElse("")
+            if (autotest.isNotEmpty()) {
+                property("meteor.autotest", autotest)
+            }
+        }
+    }
 }
 
 tasks {

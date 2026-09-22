@@ -11,7 +11,9 @@ loom = "1.14-SNAPSHOT"
 
 # Mods
 # Baritone (https://github.com/MeteorDevelopment/baritone)
-baritone = "1.21.10-SNAPSHOT"
+baritone = "1.21.11-SNAPSHOT"
+# Nether pathfinder (https://github.com/babbaj/nether-pathfinder) - JNI lib used by Baritone elytra pathing
+nether-pathfinder = "1.6"
 # Sodium (https://github.com/CaffeineMC/sodium-fabric)
 sodium = "mc1.21.11-0.8.7-fabric"
 # Lithium (https://github.com/CaffeineMC/lithium-fabric)
@@ -48,6 +50,7 @@ sodium = { module = "maven.modrinth:sodium", version.ref = "sodium" }
 lithium = { module = "maven.modrinth:lithium", version.ref = "lithium" }
 iris = { module = "maven.modrinth:iris", version.ref = "iris" }
 baritone = { module = "meteordevelopment:baritone", version.ref = "baritone" }
+nether-pathfinder = { module = "dev.babbaj:nether-pathfinder", version.ref = "nether-pathfinder" }
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
 viafabricplus = { module = "com.viaversion:viafabricplus", version.ref = "viafabricplus" }
 viafabricplus-api = { module = "com.viaversion:viafabricplus-api", version.ref = "viafabricplus" }

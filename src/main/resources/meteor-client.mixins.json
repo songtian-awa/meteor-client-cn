@@ -105,6 +105,8 @@
     "FogRendererMixin",
     "GameOptionsMixin",
     "GameRendererMixin",
+    "GameRendererNoHurtCamMixin",
+    "AutoTestWorldMixin",
     "GlBackendMixin",
     "GlCommandEncoderMixin",
     "HandledScreenAccessor",
