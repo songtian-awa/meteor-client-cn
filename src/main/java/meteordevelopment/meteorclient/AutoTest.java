@@ -52,7 +52,8 @@ public class AutoTest {
         "web-bypass", "keep-sprint", "auto-sleep", "durability-warn", "elytra-safe", "auto-potion", "auto-torch",
         "coords-copy", "auto-reply",
         "hole-finder", "villager-esp", "shulker-esp", "dripstone-esp", "anchor-esp",
-        "air-walk", "word-filter", "anti-bot", "teams", "tree-aura", "panic", "totem-timer", "auto-farm", "silent-rotate", "auto-mine"
+        "air-walk", "word-filter", "anti-bot", "teams", "tree-aura", "panic", "totem-timer", "auto-farm", "silent-rotate", "auto-mine",
+        "boost", "fast-swim", "wither-esp", "mob-esp", "crystal-counter", "death-coords", "item-filter", "anti-cactus", "wall-jump", "chat-suffix"
     );
 
     public AutoTest() {
