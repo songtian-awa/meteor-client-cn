@@ -596,6 +596,15 @@ public class Modules extends System<Modules> {
         add(new AntiPush());
         add(new AntiLevitation());
         add(new SlimeLaunch());
+        add(new SprintBypass());
+        add(new WaterBypass());
+        add(new LavaBypass());
+        add(new AirControl());
+        add(new ClimbBypass());
+        add(new JumpBypass());
+        add(new AntiSwim());
+        add(new ScaffoldBypass());
+        add(new Eagle());
 
         // Combat
         add(new AutoBlock());
@@ -605,6 +614,13 @@ public class Modules extends System<Modules> {
         add(new TargetHud());
         add(new AutoRod());
         add(new PearlAim());
+        add(new CritBypass());
+        add(new AimBypass());
+        add(new TargetBypass());
+        add(new ReachBypass());
+        add(new AutoShield());
+        add(new TriggerBot());
+        add(new AntiAim());
 
         // Render
         add(new CrystalESP());
@@ -615,16 +631,30 @@ public class Modules extends System<Modules> {
         add(new ChunkBorders());
         add(new EntityHealth());
         add(new NoHurtCam());
+        add(new TntESP());
+        add(new PistonESP());
+        add(new SpawnerESP());
+        add(new LavaESP());
+        add(new BedESP());
+        add(new ArrowESP());
+        add(new PortalESP());
 
         // Player
         add(new AutoShift());
         add(new DropSlot());
         add(new InventoryCleaner());
         add(new McCommand());
+        add(new AutoSoup());
+        add(new FishBot());
+        add(new NetherCoords());
+        add(new FastPlace());
+        add(new ClickAssist());
 
         // Misc
         add(new ChatFilter());
         add(new PacketSorter());
         add(new AntiDrown());
+        add(new ChatTimestamps());
+        add(new AutoShout());
     }
 }

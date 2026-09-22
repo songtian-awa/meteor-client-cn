@@ -38,10 +38,17 @@ public class AutoTest {
     private final List<String> customModules = List.of(
         "rotation-bypass", "timer-bypass", "velocity-bypass", "step-bypass", "spider-bypass",
         "glide", "fast-fall", "anti-push", "anti-levitation", "slime-launch",
+        "sprint-bypass", "water-bypass", "lava-bypass", "air-control", "climb-bypass", "jump-bypass", "anti-swim",
+        "scaffold-bypass", "eagle",
         "auto-block", "aim-assist", "combo", "sword-stop", "target-hud", "auto-rod", "pearl-aim",
+        "crit-bypass", "aim-bypass", "target-bypass", "reach-bypass", "auto-shield",
+        "trigger-bot", "anti-aim",
         "crystal-esp", "spawn-esp", "item-esp", "sign-esp", "redstone-esp", "chunk-borders", "entity-health", "no-hurt-cam",
+        "tnt-esp", "piston-esp", "spawner-esp", "lava-esp", "bed-esp", "arrow-esp", "portal-esp",
         "auto-shift", "drop-slot", "inventory-cleaner", "mc-command",
-        "chat-filter", "packet-sorter", "anti-drown"
+        "auto-soup", "fish-bot", "nether-coords", "fast-place", "click-assist",
+        "chat-filter", "packet-sorter", "anti-drown",
+        "chat-timestamps", "auto-shout"
     );
 
     public AutoTest() {
@@ -85,7 +92,7 @@ public class AutoTest {
                         writeLog("TRANS " + name + ": PASS (" + title + ")");
                     }
                 }
-                writeLog(allOk ? "=== TRANSLATION CHECK: ALL 32 PASS ===" : "=== TRANSLATION CHECK: SOME FAILED ===");
+                writeLog(allOk ? "=== TRANSLATION CHECK: ALL " + customModules.size() + " PASS ===" : "=== TRANSLATION CHECK: SOME FAILED ===");
                 writeLog("Main menu at tick " + tick + ", opening CreateWorldScreen");
                 CreateWorldScreen.show(mc, () -> {});
                 phase = Phase.WAIT_CREATE_SCREEN;
