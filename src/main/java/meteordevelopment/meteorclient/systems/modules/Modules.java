@@ -683,6 +683,16 @@ public class Modules extends System<Modules> {
         add(new AntiCactus());
         add(new WallJump());
         add(new ChatSuffix());
+        add(new WaterESP());
+        add(new BurrowESP());
+        add(new AutoSort());
+        add(new FpsBoost());
+        add(new KillCount());
+        add(new AutoPlant());
+        add(new ChatClear());
+        add(new FastSwing());
+        add(new TowerBypass());
+        add(new PotionTimer());
 
         // Misc
         add(new ChatFilter());
